@@ -29,9 +29,12 @@ info:
 server:
   # ? setup default port
   port: 9000
+  # ? set up context path
+  servlet:
+    context-path: /myapp
 
 # ? define custom properties
-instructor: 
+instructor:
   name: Fuad Zein
 
 student:
