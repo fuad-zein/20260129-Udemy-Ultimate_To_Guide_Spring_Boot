@@ -1,3 +1,28 @@
 spring:
   application:
     name: myapp
+
+# expose /health and /info endpoints - actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          "*"
+          # - health
+          # - info
+          # - metrics
+  info:
+    env:
+      enabled: true
+
+# add information about our application - actuator
+info:
+  app:
+    name: Healthy Activities
+    description: This app keeps tracks of your daily health activities.
+    version: 3.0.0
+
+server:
+  # setup default port
+  port: 9000
