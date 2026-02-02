@@ -12,6 +12,9 @@ management:
           # - health
           # - info
           # - metrics
+        # exclude: # disable endpoint - actuator
+        # - health
+        # - info
   info:
     env:
       enabled: true
