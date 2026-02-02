@@ -2,24 +2,24 @@ spring:
   application:
     name: myapp
 
-# expose /health and /info endpoints - actuator
+# ? expose /health and /info endpoints - actuator
 management:
   endpoints:
     web:
       exposure:
         include:
-          "*"
+          "*" # ? all endpoint - actuator
           # - health
           # - info
           # - metrics
-        # exclude: # disable endpoint - actuator
+        # exclude: # ? disable endpoint - actuator
         # - health
         # - info
   info:
     env:
       enabled: true
 
-# add information about our application - actuator
+# ? add information about our application - actuator
 info:
   app:
     name: Healthy Activities
@@ -27,5 +27,12 @@ info:
     version: 3.0.0
 
 server:
-  # setup default port
+  # ? setup default port
   port: 9000
+
+# ? define custom properties
+instructor: 
+  name: Fuad Zein
+
+student:
+  class: Java Class Batch 1
