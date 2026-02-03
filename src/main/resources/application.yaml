@@ -1,6 +1,9 @@
 spring:
   application:
     name: myapp
+  # ? setup lazy initialization
+  main:
+    lazy-initialization: true
 
 # ? expose /health and /info endpoints - actuator
 management:
