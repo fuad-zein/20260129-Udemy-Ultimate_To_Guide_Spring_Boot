@@ -11,8 +11,14 @@ public class CourseController {
 
   private Instructor myInstructor;
 
+  // ? constructor injection
+  // @Autowired
+  // public CourseController(Instructor instructor) {
+  // myInstructor = instructor;
+  // }
+
   @Autowired
-  public CourseController(Instructor instructor) {
+  public void setInstructor(Instructor instructor) {
     myInstructor = instructor;
   }
 
