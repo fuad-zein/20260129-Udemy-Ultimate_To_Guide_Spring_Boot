@@ -1,7 +1,6 @@
 package com.udemy.myapp.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,9 +23,12 @@ public class CourseController {
   // myInstructor = instructor;
   // }
 
-  // ?
+  // ? Qualifier
   @Autowired
-  public CourseController(@Qualifier("javaInstructor") Instructor instructor) {
+  // public CourseController(@Qualifier("phpInstructor") Instructor instructor) {
+  // myInstructor = instructor;
+  // }
+  public CourseController(Instructor instructor) {
     myInstructor = instructor;
   }
 
