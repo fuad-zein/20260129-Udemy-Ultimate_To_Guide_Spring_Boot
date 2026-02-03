@@ -1,4 +1,4 @@
-package com.udemy.myapp.instructor;
+package com.udemy.myapp.common;
 
 import org.springframework.stereotype.Component;
 

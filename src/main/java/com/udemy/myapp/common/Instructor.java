@@ -1,4 +1,4 @@
-package com.udemy.myapp.instructor;
+package com.udemy.myapp.common;
 
 public interface Instructor {
   String getProgrammingExercises();
